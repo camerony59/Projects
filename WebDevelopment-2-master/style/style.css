@@ -1,0 +1,898 @@
+@charset "utf-8";
+/* CSS Document */
+html ,body {
+	margin: 0px;	
+}
+a {
+	text-decoration:none;
+}
+#mainframe {
+	width:100%;
+}
+#header{
+	margin:0px auto 0px auto; 
+	width:95%;
+	max-width:950px;
+	height:130px;
+}
+#logo-contain{
+	width:100%;
+	height:105px;
+	float:left;
+	clear:both;
+}
+#logo{
+	background-image:url(../images/logo.png);
+	width:222px;
+	height:49px;
+	float:left;
+	margin-top:28px;
+}
+#topsearchbox{
+	margin-left: 20px;
+	float:left;
+	width:50%;
+	min-width:100px;
+	max-width:458px;
+	height:35px;
+	margin-top:35px;
+}
+#checkout{
+	background-image:url(../images/checkoutpic.png);
+	width:207px;
+	height:84px;
+	float:right;
+	margin-top:10.5px;
+}
+#menubar{
+	width:100%;
+	height:50px;
+	float:left;
+	background-color:#22323f;
+	/*border-radius:5px;*/
+}
+
+
+
+
+/* ------------------css for menubar----------------------------- */
+
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+.menu-wrap {
+    width:100%;
+	display:block;
+}
+.menu {
+    width:100%;
+    margin:0px auto;
+}
+.menu li {
+	list-style: none;
+	margin-bottom: 0px;
+	margin-left: -40px;
+	margin-right: 40px;
+	text-align:center;
+	margin-top: -1px;
+}
+.menu a {
+	transition: all linear 0.15s;
+	color: #FFFFFF;
+	font-family:Arial, sans-serif;
+}
+.menu li:hover >  a {
+	text-decoration: none;
+	color: #de9f3e;
+}
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+	font-weight:bold;
+	
+}
+.menu > ul > li > a {
+	display: inline-block;
+	padding-bottom: 13px;
+	padding-right: 30px;
+	padding-top: 15px;
+	margin-top: -16px;
+	padding-left: 30px;
+	text-decoration: none;
+}
+.menu > ul > li:hover > a, .menu > ul > a {
+    background:#000;
+}
+
+
+/* -----------------sign in -------------- */
+
+
+#signinbox {
+	float: right;
+	height: 100%;
+	width: 170px;
+	background-color: #e49e00;
+	transition: all linear 0.15s;
+	margin-top: -16px;
+}
+#signinbox a{
+	float: right;
+	font-size: 19px;
+	padding-top: 0px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display:block;
+	padding-top:15px;
+
+}
+
+
+#signinbox:hover{
+	background-color:#d98500;
+}
+
+/* ---------------------- sign in picture ------------- */
+
+#signinbox1 {
+	float: right;
+	height: 100%;
+	width: 70px;
+	background-color: #e49e00;
+	transition: all linear 0.15s;
+	margin-top: -16px;
+	display:none;
+}
+#signinbox1 a{
+	float: right;
+	font-size: 19px;
+	padding-top: 0px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display:block;
+	padding-top:15px;
+
+}
+
+
+#signinbox1:hover{
+	background-color:#d98500;
+}
+
+/* -----------------|-------------- */
+
+#bookend {
+	float: right;
+	height: 50%;
+	width: 2px;
+	margin-bottom: 0px;
+	margin-top: -16px;
+}
+
+/* -----------------cart icon -------------- */
+
+
+#carticon {
+	float: right;
+	height: 100%;
+	width: 50px;
+	background-color: #e49e00;
+	margin-bottom: 0px;
+	margin-top: -16px;
+	transition: all linear 0.15s;
+}
+#carticon a{
+	float: right;
+	font-size: 19px;
+	padding-top: 15px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-decoration:none;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+#carticon:hover{
+	background-color:#d98500;
+}
+
+
+/*------------------------- menu2---------------------*/
+
+
+.menu-wrap1{
+	display:none;
+	width:100%;
+}
+
+.clearfix1:after {
+    display:block;
+    clear:both;
+}
+
+.menu1 {
+    width:100%;
+    margin:0px auto;
+}
+.menu1 li {
+	list-style: none;
+	margin-bottom: 0px;
+	margin-left: -40px;
+	margin-right: 40px;
+	text-align:center;
+	margin-top: -1px;
+}
+.menu1 a {
+	transition: all linear 0.15s;
+	color: #FFFFFF;
+	font-family:Arial, sans-serif;
+}
+.menu1 li:hover >  a {
+	text-decoration: none;
+	color: #de9f3e;
+}
+.menu1 .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+.menu1 > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+	font-weight:bold;
+	
+}
+.menu1 > ul > li > a {
+	display: inline-block;
+	padding-bottom: 13px;
+	padding-right: 30px;
+	padding-top: 15px;
+	margin-top: -16px;
+	padding-left: 30px;
+	text-decoration: none;
+}
+.menu1 > ul > li:hover > a, .menu1 > ul > a {
+    background:#000;
+}
+.menu1 li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu {
+    width:150%;
+    padding:5px 0px;
+    position:absolute;
+   	top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    background:#22323f;
+	
+}
+.sub-menu li {
+	display: block;
+	font-size: 16px;
+	margin-left: 5px;
+}
+.sub-menu li a {
+	display: block;
+	text-decoration: none;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 15px;
+	padding-top: 10px;
+}
+
+/*---------------- content--------------*/
+
+#banner{
+	height:380px;
+	width:100%;
+	background-image:url(../images/banner1.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-color:#000;
+}
+#maincontainer{
+	width:95%;
+	margin: 50px auto 0px auto;
+	max-width:950px;
+}
+.headtext1{
+	font-family:Arial;
+	font-size:30px;
+	color:#444444;
+	margin-bottom:40px;
+}
+#boxcontainer{
+	width:100%;
+	height:100%;
+}
+.moviebox{
+	width:153px;
+	height:300px;
+	margin-bottom:10px;
+	float:left;
+	margin-left:2px;
+}
+.boxstyle{
+	width:100%;
+	height:100%;
+	text-align:center;
+	transition: all 0.2s ease-out;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	color:#22395e;
+}
+
+.boxstyle:hover{
+	margin-top:-6px;
+	background-color:#f2f2f2;
+	border-radius:5px;
+}
+.pic1style{
+	display:inline-block;
+	margin-top:7px;
+	width:139px;
+	height:208px;
+}
+
+
+
+
+/*---------------------- Footer -------------- */
+#footer{
+	width:100%;
+	height:150px;
+	background:#222222;
+}
+#footer-frame{
+	height:100%;
+	margin:0px auto 0px auto; 
+	width:95%;
+	max-width:950px;
+}
+#footer-logo{
+	background-image: url(../images/logo-footer.png);
+	width: 170px;
+	height: 38px;
+	float: left;
+	margin-top: 25px;
+}
+#footer-link{
+	float: right;
+	margin-top:25px;
+}
+.text-in-foot{
+	font-family: Arial;
+	font-size: 14px;
+	margin-left: 11px;
+	margin-right: 11px;
+	color:#888888;
+	float:left;
+}
+.text-in-foot a{
+	text-decoration:none;
+	color:#888888;
+	transition: all 0.2s ease-out;
+}
+.text-in-foot a:hover{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+.bookend2{
+	background-image:url(../images/bookend2.jpg);
+	background-repeat:repeat-y;
+	height:17px;
+	width:2px;
+	float:left;
+}
+
+
+/*----------------------- For Product ------------------- */
+
+#leftcontent {
+	width: 25%;
+	float:left;
+}
+.picstyle{
+	width:100%;
+}
+
+.pic2style{
+	width: 85px;
+	float: left;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+#rightcontent {
+	width: 75%;
+	float: right;
+}
+
+#fontmovie {
+	text-align:center;
+	font-size:40px;
+	font-weight:bold;
+	font-family:Arial;
+}
+
+.contentbox {
+	width: 95%;
+	background-color: #f2f2f2;
+	height:100%;
+	float: right;
+	margin-top:30px;
+	border-radius:5px ;
+	padding-bottom:30px;
+
+}
+
+
+
+#buy-rent {
+	width: 100%;
+	text-shadow: 0px 0px #595959;
+	background-color: #f2f2f2;
+	height: 15%;
+	padding-top: 15px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 19px;
+	padding-bottom: 15px;
+}
+
+#buy-box {
+	width: 50%;
+	background-color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	border:1px solid #CCC;
+	border-radius:5px;
+}
+#price {
+	text-align: center;
+	font-family: Arial;
+	font-size: 20px;
+	padding-top: 25px;
+}
+
+#buybottom{
+	width: 100%;
+	height: 55px;
+	background-color: #f2f2f2;
+	margin-top: 17px;
+	border-top: 1px solid #CCC;
+
+}
+
+#buybottom1{
+	width: 100px;
+	height: 30px;
+	background-color: #41688f;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 9px;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-top: 7px;
+	font-family: Arial;
+	font-size: 15px;
+	margin-left: auto;
+}
+
+#buybottom1 a{
+	text-decoration: none;
+	color: #FFF;
+	width: 100%;
+	height: 100%;
+	padding-top: 9px;
+	padding-bottom: 12px;
+}
+
+#buybottom1:hover {
+	background-color:#235172;
+}
+	
+.detailfont{
+	width: 90%;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 25px;
+	font-size: 16px;
+	font-family: Arial;
+	letter-spacing: 1px;
+	word-spacing: normal;
+	line-height: 21px;
+	font-weight:150;
+}
+	
+
+/*----------------------- For Sign in page ------------------- */
+	
+#second-bg{
+	width:100%;
+	padding-top:25px;
+	background-color:#f2f2f2;
+}
+#signinphead{
+	width:45%;
+	height:40px;
+	padding-left:25px;
+	padding-right:25px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+	border:1px solid #dedede;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	color:#444444;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	line-height:40px;
+	vertical-align:middle;
+}
+#signinpbody{
+	width:45%;
+	padding-left:25px;
+	padding-right:25px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+	color:#666666;
+	font-family:Arial;
+	font-size:16px;
+	border-left:1px solid #dedede;
+	border-right:1px solid #dedede;
+}
+#signinpfoot{
+	width:45%;
+	padding-left:25px;
+	padding-right:25px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+	padding-top:10px;
+	font-family:Arial;
+	font-size:14px;
+	color:#666666;
+	border:1px solid #dedede;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+.signinp-textbox{
+	width:100%;
+	height:25px;
+	margin-top:15px;
+	margin-bottom:20px;
+	font-size:16px;
+	border-radius:5px;
+	border:1px solid #a9a9a9;
+}
+.signinp-textbox2{
+	width:100%;
+	height:200px;
+	margin-bottom:10px;
+	font-size:16px;
+	border-radius:5px;
+	border:1px solid #a9a9a9;
+}
+.signinp-button{
+	background-color:#3f7599;
+	color:#FFFFFF;
+	border:1px solid #345c7c;
+	padding:10px 25px 10px 25px;
+	border-radius:5px;
+	float:right;
+}
+.signinp-button:hover{
+	background-color:#235273;
+}
+
+/*----------------------- For About us page ------------------- */
+	
+#aboutushead{
+	width:auto;
+	height:40px;
+	padding-left:25px;
+	padding-right:25px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+	border:1px solid #dedede;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	color:#444444;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	line-height:40px;
+	vertical-align:middle;
+}
+#aboutusbody{
+	width:auto;
+	padding-left:25px;
+	padding-right:25px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+	color:#666666;
+	font-family:Arial;
+	font-size:16px;
+	border-left:1px solid #dedede;
+	border-right:1px solid #dedede;
+}
+#aboutusfoot{
+	width:auto;
+	padding-left:25px;
+	padding-right:25px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+	padding-top:10px;
+	font-family:Arial;
+	font-size:14px;
+	color:#666666;
+	border:1px solid #dedede;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+.about-us-pic img{
+	width:100px;
+	height:100px;
+	border-radius:100px;
+	margin-top:25px;
+	float:left;
+}
+.about-us-name{
+	height:100px;
+	margin-left:50px;
+	margin-top:25px;
+	float:left;
+	vertical-align:middle;
+	line-height:100px;
+}
+
+
+/*----------------------- For CART ------------------- */
+
+.table-1{
+	width:50%;
+	float:left;
+}
+.table-2{
+	width:25%;
+	text-align:center;
+	float:left;
+}
+.moviecover{
+	width:30%;
+	min-width:100px;;
+}
+.cartp-button{
+	background-color:#3f7599;
+	color:#FFFFFF;
+	border:1px solid #345c7c;
+	padding:10px 25px 10px 25px;
+	border-radius:5px;
+	float:right;
+}
+.cartp-button:hover{
+	background-color:#235273;
+}
+	
+
+/*---------------------------For 1000px screen(Search Box changes)-----------------------------------*/
+
+@media all and (max-width: 1000px) {
+#topsearchbox{
+	margin-left: 20px;
+	float:left;
+	width:50%;
+	min-width:100px;
+	max-width:400px;
+	height:35px;
+	margin-top:35px;
+}
+	
+}
+
+
+
+
+
+
+
+/*---------------------------For 930px screen(Search Box changes)-----------------------------------*/
+@media all and (max-width: 930px) {
+#topsearchbox{
+	margin-left: 20px;
+	float:left;
+	width:70%;
+	min-width:50px;
+	max-width:630px;
+	height:35px;
+	margin-top:35px;
+	display:none;
+}
+
+	
+}
+
+
+
+/*---------------------------For 745px screen (menu, signin changes)-----------------------------------*/
+@media all and (max-width: 745px) {
+
+.menu-wrap1{
+	display:block;
+}
+.menu-wrap{
+	display:none;
+}
+/*----------------------- For Sign in page ------------------- */
+#signinphead{
+	width:90%;
+}
+#signinpbody{
+	width:90%;
+}
+#signinpfoot{
+	width:90%;
+}
+}
+
+/*---------------------------For 675px screen (Footer Changes)-----------------------------------*/
+@media all and (max-width: 675px) {
+#footer-logo{
+	background-image: url(../images/logo-footer.png);
+	width: 170px;
+	height: 38px;
+	float: none;
+	margin-top: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+#footer-link{
+	float: none;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.text-in-foot{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left:20px;
+	padding-right:20px;
+}
+#footer{
+	padding-top:10px;
+	padding-bottom:20px;
+}
+
+}
+
+
+
+/*-----------------------------For 500px screen---------------------------------*/
+/*-------------------(Search Box logo,banner,footer,signin cart, change)---------------------*/
+@media all and (max-width: 500px) {
+	
+#logo{
+	background-image:url(../images/logo.png);
+	width:222px;
+	height:49px;
+	float:none;
+	margin-top:28px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#topsearchbox{
+	margin-left: 20px;
+	float:left;
+	width:50%;
+	min-width:100px;
+	max-width:458px;
+	height:35px;
+	margin-top:35px;
+	display:none;
+}
+#checkout{
+	background-image:url(../images/checkoutpic.png);
+	width:207px;
+	height:84px;
+	float:right;
+	margin-top:10.5px;
+	display:none;
+}
+
+#banner{
+	height:182px;
+	width:100%;
+	background-image:url(../images/banner1.jpg);
+	background-size: 500px 132px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-color:#000;
+}
+#signinbox{
+	display:none;
+}
+#signinbox1{
+	display:block;
+}
+/*----------------------- For Sign in page ------------------- */
+#signinphead{
+	width:85%;
+}
+#signinpbody{
+	width:85%;
+}
+#signinpfoot{
+	width:85%;
+}
+.signinp-button{
+	background-color:#3f7599;
+	color:#FFFFFF;
+	border:1px solid #345c7c;
+	padding:10px 25px 10px 25px;
+	border-radius:5px;
+	float:none;
+	width:100%;
+	margin-bottom:10px;
+}
+
+/*----------------------- For About Us page ------------------- */
+.about-us-pic img{
+	width:100px;
+	height:100px;
+	border-radius:100px;
+	margin-top:25px;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+.about-us-name{
+	height:50px;
+	margin-left:50px;
+	float:none;
+	vertical-align:middle;
+	line-height:50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+}
+/*----------------------- Cart ------------------- */
+.cartp-button{
+	background-color:#3f7599;
+	color:#FFFFFF;
+	border:1px solid #345c7c;
+	padding:10px 25px 10px 25px;
+	border-radius:5px;
+	width:100%;
+}
+/*----------------------- Product ------------------- */
+.pic2style{
+	float:none;
+}
+#price {
+	font-size: 14px;
+}
+}
