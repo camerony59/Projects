@@ -1,0 +1,223 @@
+.row:after .row:before{
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Sansita', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto Slab', serif;
+*/
+.container{
+	width: 1170px;
+	margin:auto;
+}
+body{
+	margin:0px;
+}
+header{
+	margin-top: 0px;
+	border: 5px solid;
+	color: #cfa54b;
+
+}
+.memuinfo {
+    margin-top: 5px;
+    padding-right: 200px;
+    margin-left: -100px;
+    width: 1170px;
+    float: left;
+    background-color: #343434;
+}
+.information {
+    margin-left: 90px;
+}
+.langinfo{
+	float: left;
+	border-right: 1px solid #8f887b;
+	border-left: 1px solid #8f887b;
+}
+i.icon-sphere {
+    float: left;
+    margin-top: 15px;
+}
+
+.langinfo p {
+	color: #8f887b;
+    padding-right: 40px;
+    float: right;
+    padding-left: 15px;
+}
+.callinfo{
+	float: left;
+	border-right: 1px solid #8f887b;
+	border-left: 1px solid #8f887b;
+}
+i.icon-phone {
+    float: left;
+    margin-top: 15px;
+}
+.callinfo p {
+	color: #8f887b;
+    margin-right: 40px;
+    margin-left: 15px;
+    float: right;
+}
+.mailinfo{
+	float: left;
+	border-right: 1px solid #8f887b;
+	border-left: 1px solid #8f887b;	
+}
+i.icon-envelop {
+    margin-top: 15px;
+    float: left;
+}
+
+.mailinfo p {
+	color: #8f887b;
+    padding-right: 40px;
+    float: right;
+    padding-left: 15px;
+}
+.btninfo {
+    float: right;
+}
+.Signup p {
+    padding: 7px;
+    border: 1px solid #ffffff;
+    margin-left: 5px;
+    float: left;
+
+}
+p.regbtn {
+     text-transform: uppercase;
+    color: #ffffff;
+}
+p.signbtn {
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+.headermenu {
+    float: left;
+    margin-top: 5px;
+}
+.logo {
+    float: left;
+}
+nav ul {
+    margin-left: 25px;
+    list-style: none;
+    float: left;
+}
+nav ul li {
+	color: #5b5b5b;
+    text-transform: uppercase;
+    display: inline;
+    float: left;
+    padding: 20px;
+}
+ ul a:hover{
+	color: #cfa54b;
+
+}
+
+.headersearch {
+    float: left;
+}
+i.fas.fa-search {
+    float: left;
+    font-size: 45px;
+    margin-top: 20px;
+}
+i.fas.fa-shopping-basket {
+	padding-left: 15px;
+    float: left;
+    font-size: 45px;
+    margin-top: 20px;
+}
+.Register{
+	float: left;
+}
+.headermenu{
+	float: left;
+}
+.slider{
+	margin-top: 160px;
+	background-image: url(Honey/Manuka-Honey-Active-30-Benefits1.jpg);
+	height: 645px;
+}
+.slidertxt {
+    margin-left: 220px;
+    float: left;
+    text-align: center;
+    margin-top: 240px;
+}
+.slidertxt h1 {
+    color: #ffffff;
+    line-height: 19px;
+    font-size: 60px;
+}
+.slidertxt p {
+    font-size: 42px;
+    line-height: 19px;
+    color: #ffffff;
+}
+.slidertxt button {
+    border-color: #cfa54b;
+    background-color: transparent;
+    padding: 15px;
+    color: #ffffff;
+}
+.honeybodyone {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.onepic {
+	padding: 10px;
+    width: 370px;
+    float: left;
+}
+.twopic {
+	padding: 10px;
+    width: 370px;
+    float: left;
+}
+.threepic {
+	padding: 10px;
+    width: 370px;
+    float: left;
+}
+.fourpic {
+	padding: 10px;
+    width: 370px;
+    float: left;
+}
+.fivepic {
+	padding: 10px;
+    width: 370px;
+    float: left;
+}
+.sixpic {
+	padding: 10px;
+    width: 370px;
+    float: left;
+}
+.honeybodytwo{
+	background-image: url(Honey/burlap.png);
+	float: left;
+}
+.twobodyleft{
+	width: 40%;
+	float: left;
+}
+.twobodyright{
+	float: left;
+	width: 60%;
+}
+
+
+
+
+
+
