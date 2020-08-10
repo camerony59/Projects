@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
+public interface Overdraft {
 
-public class Overdraft {
+    public void payOverDraft();
+    public void checkOverDraftRate();
+
 }
