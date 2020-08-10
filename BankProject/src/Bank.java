@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Bank {
 
@@ -98,7 +97,7 @@ public class Bank {
         for (Customer u : this.usersList) { // search until end of list of users
 
 
-            if ((userID == userID && u.validatePin(pin))) { // if user found, and pin is correct, return User object
+            if (u.getUUID().compareTo(userID) == 0 && u.validatePin(pin)) { // if user found, and pin is correct, return User object
                 return u;
             }
         }

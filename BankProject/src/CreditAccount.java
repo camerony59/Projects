@@ -11,7 +11,7 @@ public class CreditAccount extends Account {
 
     public CreditAccount(String name, Customer holder, Bank theBank,double overDraftLimit) {
         super(name, holder, theBank);
-        // TODO Auto-generated constructor stub
+       
 
         this.name = name;
 

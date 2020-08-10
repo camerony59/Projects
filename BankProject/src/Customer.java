@@ -30,8 +30,10 @@ public class Customer {
         this.uuid = theBank.getNewUserUUID();
 
         // create empty list of accounts
-        this.custsAccounts = new ArrayList<Account>();
-
+        if(custsAccounts.isEmpty()){
+            this.custsAccounts = new ArrayList<Account>();
+        }
+       
         // print log message
         System.out.printf("New user %s, %s with ID %s created.\n",
                 lastName, firstName, this.uuid);
@@ -89,7 +91,7 @@ public class Customer {
 
     public void printAccountsSummary() { //prints a summary of all accounts for the user
 
-        System.out.printf("|\t\t\t\t\t\t\t|\n|%s's accounts summary\t\t\t\t|\n", this.firstName);
+        System.out.printf("|\t\t\t\t\t\t\t|\n|%s's accounts summary\t\t\t\t|\n", this.firstName, this.lastName);
         System.out.println("|_______________________________________________________|");
         for (int a = 0; a < this.custsAccounts.size(); a++) {
             System.out.printf("%d) %s\n", a+1,

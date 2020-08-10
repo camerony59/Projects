@@ -18,16 +18,10 @@ public class ATM implements Overdraft{
         theBank.addAccount(newAccount);
         System.out.println(newAccount);
 
-        Account newCreditAccount = new CreditAccount("Credit Account", Manager, theBank, 1000);
+        Account newCreditAccount = new CreditAccount("Credit Account", Manager, theBank, 134029);
         Manager.addAccount(newCreditAccount);
         theBank.addAccount(newCreditAccount);
 
-
-        Customer overdraftCustomer = theBank.addUser("Naomi", "Hurley", "1234"); //create test user 2
-
-        Account newCreditAccount2 = new CreditAccount("Credit Account", overdraftCustomer, theBank, 1000); // add a creditAccount for this user as well as a savings account
-        Manager.addAccount(newCreditAccount2);
-        theBank.addAccount(newCreditAccount2);
 
         Customer user;
 
@@ -54,7 +48,7 @@ public class ATM implements Overdraft{
         do {
 
 
-            System.out.println(" _____________________Acme ATM Company___________________");
+            System.out.println(" _____________________Code___________________");
             System.out.print("|\t\t\t\t\t\t\t| \n");
             System.out.printf("|\tWelcome to %s\t\t|\n", theBank.getName());
             System.out.print("|\t\t\t\t\t\t\t| \n");
@@ -139,7 +133,7 @@ public class ATM implements Overdraft{
                 ATM.overdraftMenu(theUser,sc);
                 break;
             case 7:
-                ATM.createCustomer(sc); //flush buffer
+                ATM.createCustomer(theUser, sc); //flush buffer
                 break;
 
             case 8:
@@ -147,7 +141,7 @@ public class ATM implements Overdraft{
                 break;
 
         case 9:
-            sc.nextLine(); //flush buffer
+                sc.nextLine(); //flush buffer
         break;
     }
 
@@ -167,7 +161,7 @@ public class ATM implements Overdraft{
         do {
 
 
-            System.out.println(" _____________________Acme ATM Company___________________");
+            System.out.println(" _____________________Code___________________");
             System.out.print("|\t\t\t\t\t\t\t| \n");
             System.out.printf("|\tWelcome to %s\t\t|\n", theBank.getName());
             System.out.print("|\t\t\t\t\t\t\t| \n");
@@ -464,7 +458,7 @@ public class ATM implements Overdraft{
 
 
     }
-    public static void createCustomer(Scanner sc)  {
+    public static void createCustomer(Customer theUser, Scanner sc ) throws FileNotFoundException {
 
         Bank theBank = new Bank("Gordon Allied National Bank");	//title of bank
         System.out.println("Enter a first name");
@@ -475,16 +469,28 @@ public class ATM implements Overdraft{
         String pn = sc.next();
         Customer defaultUser = theBank.addUser(na, ln, pn);
 
-        Account newAccount = new Account("Current Account", defaultUser, theBank); // add a default Current and Credit account for user
-        defaultUser.addAccount(newAccount);
-        theBank.addAccount(newAccount);
-        System.out.println(newAccount);
+        Account nAccount = new Account("Current Account", defaultUser, theBank); // add a default Current and Credit account for user
+        defaultUser.addAccount(nAccount);
+        theBank.addAccount(nAccount);
+        System.out.println(nAccount);
+        theUser.printAccountsSummary();
 
-        Account newCreditAccount = new CreditAccount("Credit Account", defaultUser, theBank, 1000);
-        defaultUser.addAccount(newCreditAccount);
-        theBank.addAccount(newCreditAccount);
+        Account nCAccount = new CreditAccount("Credit Account", defaultUser, theBank, 10000);
+        defaultUser.addAccount(nCAccount);
+        theBank.addAccount(nCAccount);
 
         Customer user;
+
+
+        while (true) { //loop which runs until program closes/ is quit
+
+            // stay in login prompt until successful login
+            user = ATM.mainMenuPrompt(theBank, sc);
+
+            // stay in main menu until user quits
+            ATM.customerMenu(user, sc);
+
+        }
     }
 
 
